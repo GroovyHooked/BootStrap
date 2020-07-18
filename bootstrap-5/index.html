@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bootstrap 5</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg bg-secondary d-flex flex-row justify-content-center">
+
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Nous contacter</a>
+          </li>
+        </ul>
+
+      </nav>
+      <h2>Nav Verticale à gauche</h2>
+      <nav class="navbar bg-secondary col-2">
+
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Nous contacter</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <h2>Nav avec contenu</h2>
+
+      <div class="row">
+
+        <div class="nav flex-column nav-pills col-2 pr-0 bg-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+           <a class="nav-link text-white active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Accueil</a>
+           <a class="nav-link text-white" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">A propos</a>
+           <a class="nav-link text-white" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Nous contacter</a>
+        </div>
+
+        <div class="tab-content col-10" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Primero Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate saufeur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco assis adipisicing labore officia magna elit nisi in aute tempor commodo    eiusmod.</div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Secundo ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate saufeur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco assis adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Tertio Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate saufeur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco assis adipisicing labore officia magna elit nisi in aute tempor commodo    eiusmod.</div>
+        </div>
+
+      </div>
+
+    </body>
+</html>
