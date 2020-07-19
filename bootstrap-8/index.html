@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 8</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+
+      <h2 class="d-flex justify-content-center">Collapse</h2>
+
+      <div class=" d-flex flex-row justify-content-around">
+        <div class="w-25">
+           <a href="#demo" class="btn btn-primary w-100" data-toggle="collapse">Mon bouton</a>
+           <div id="demo" class="collapse border p-3">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+        </div>
+        <div class="w-25">
+           <a href="#demo1" class="btn btn-primary w-100" data-toggle="collapse">Mon bouton</a>
+           <div id="demo1" class="collapse border p-3">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+        </div>
+        <div class="w-25">
+           <a href="#demo2" class="btn btn-primary w-100" data-toggle="collapse">Mon bouton</a>
+           <div id="demo2" class="collapse border p-3">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </div>
+        </div>
+      </div>
+
+        <h2 class="d-flex justify-content-center">Accordeon</h2>
+
+      <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                Premier Element
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              Deuxième Element
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Troisième Element
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="d-flex justify-content-center">Collapse et fermetures</h2>
+
+        <div id="accordion2">
+          <div class="d-flex flex-row justify-content-around">
+            <div class="w-25">
+               <a href="#demo3" class="btn btn-primary w-100" data-toggle="collapse">Mon bouton</a>
+               <div id="demo3" class="collapse border p-3" data-parent="#accordion2">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               </div>
+            </div>
+            <div class="w-25">
+               <a href="#demo4" class="btn btn-primary w-100" data-toggle="collapse">Mon bouton</a>
+               <div id="demo4" class="collapse border p-3" data-parent="#accordion2">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               </div>
+            </div>
+            <div class="w-25">
+               <a href="#demo5" class="btn btn-primary w-100" data-toggle="collapse">Mon bouton</a>
+               <div id="demo5" class="collapse border p-3" data-parent="#accordion2">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
