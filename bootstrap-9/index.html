@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 9</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <script>
+            $(document).ready(function() {
+                var url = $("#Geeks3").attr('src');
+                $("#Geeks2").on('hide.bs.modal', function() {
+                    $("#Geeks3").attr('src', '');
+                });
+                $("#Geeks2").on('show.bs.modal', function() {
+                    $("#Geeks3").attr('src', url);
+                });
+            });
+        </script>
+    </head>
+    <body>
+    <center class="mt-5 mb-5">
+          <h2 style="color:grey">
+          ModalForGeeks
+         </h2>
+
+      <div class="container-fluid">
+          <!-- Boutton modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Simuler la demo
+          </button>
+
+          <!-- Modal -->
+          <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Titre du Modal</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                  <button type="button" class="btn btn-primary">Sauvegarder</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div>
+    </center>
+
+    <center>
+      <h3>Faire surgir une vidéo sur un modal</h3>
+        <div class="bs-example">
+            <a href="#Geeks2" class="btn btn-lg btn-primary" data-toggle="modal">Lire la Vidéo</a>
+            <div id="Geeks2" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h3>Bande annonce UFC 194</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe id="Geeks3" width="450" height="300" src="https://www.youtube.com/embed/BYlM_GQyFLo?autoplay=1" frameborder="0" allowfullscreen>
+                          </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+  </body>
+</html>
