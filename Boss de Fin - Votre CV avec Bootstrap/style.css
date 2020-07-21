@@ -1,3 +1,4 @@
+
 *{
   font-family: 'Epilogue', sans-serif;
 }
@@ -7,10 +8,19 @@
 .navbar{
   background-color: #BD5D38;
 }
+.text-light{   /* Prénom/Nom dans la navbar*/
+  font-size: 1.5em;
+  bottom: 0rem;
+}
 .image{
   height: 20%;
   width: 20%;
   max-width: 40px;
+}
+.image1{
+  height: 25%;
+  width: 25%;
+  max-width: 48px;
 }
 center img{
   height: 25%;
@@ -33,7 +43,7 @@ h2.text-uppercase > span:nth-child(1){ /* titre présentation*/
 }
 h5.text-uppercase:nth-child(3){ /* mail présentation*/
   color:  #BD5D38;
-  font-size: 2em;
+  font-size: 1em;
 }
 #experience > h2:nth-child(1){ /* titre experience*/
   color: #BD5D38;
@@ -43,17 +53,21 @@ h5.text-uppercase:nth-child(3){ /* mail présentation*/
   color: #BD5D38;
   font-size: 2.5em;
 }
-.text-light{
-  font-size: 1.5em;;
-}
+
 
 h2.text-center{
   font-family: 'Epilogue', sans-serif;
 }
 .exp-logo img{
   width: 100px;
+  margin-bottom: 20px;
 }
-
+.exp-info h4{
+  font-size: 1.3em;;
+}
+.exp-info h3{
+  color: #BD5D38;
+}
 .nom{
   font-family: 'Epilogue', sans-serif;  
 }
@@ -67,7 +81,8 @@ h2.text-center{
   width: 90%;
 }
 .for-logo img{
-  width: 100px;;
+  width: 100px;
+  margin-bottom: 20px;
 }
 h2.mt-5{     /* titre compétences*/
   color:  #BD5D38;
@@ -157,7 +172,12 @@ footer a:hover{
     left: 0;
     display: flex;
     flex-direction: column-reverse;
-    
+  }
+  .navbar-toggler-icon{
+    display: none;
+  }
+  .nav-item{
+    display: block;
   }
   .photo{
     display: inline-block;
@@ -166,12 +186,15 @@ footer a:hover{
     max-width: 100%;
     margin-top: 80%;
     border: 8px solid #CA7D60;
+  
   }
   .navbar-toggler{
     margin-bottom: 50%;
   }
   .page{
     margin-left: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   div.container:nth-child(1){
     padding-bottom: 50%;
@@ -180,8 +203,15 @@ footer a:hover{
     display: none;
   }
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  div.presentation{
+    border-bottom: 1px solid lightgrey;
+    
+  }
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   .EXPERIENCE{
     padding-bottom: 10%;
+    border-bottom: 1px solid lightgrey;
   }
   .exp{
     display: grid;
@@ -198,6 +228,10 @@ footer a:hover{
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   .FORMATION{
     padding-top: 10%;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding-bottom: 20%;
   }
   .for{
     width: 100%;
@@ -227,8 +261,13 @@ footer a:hover{
     max-width: 200px;
     }
   .Competences{
-    margin-top: 40%;
-  }  
+    margin-top: 35%;
+    margin-bottom: 20%;
+    
+  } 
+  section.interet1{
+    border-top: 1px solid lightgrey;
+  } 
   .interet1{
     height: 700px;
     padding-top: 30%;
