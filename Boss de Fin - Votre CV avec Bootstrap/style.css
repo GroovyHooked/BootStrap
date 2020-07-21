@@ -8,6 +8,9 @@
 .navbar{
   background-color: #BD5D38;
 }
+div.ghost{
+  display: none;
+}
 .text-light{   /* Prénom/Nom dans la navbar*/
   font-size: 1.5em;
   bottom: 0rem;
@@ -186,17 +189,21 @@ footer a:hover{
 @media screen and (min-width:990px){
   .navbar{
     position: fixed;
-    width: 15%;
+    width: 16%;
     height: 100vh;
     left: 0;
     display: flex;
     flex-direction: column-reverse;
+    
   }
   .navbar-toggler-icon{
     display: none;
   }
   .nav-item{
     display: block;
+  }
+  div.ghost{
+    display: inline-block;
   }
   .photo{
     display: inline-block;
