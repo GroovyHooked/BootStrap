@@ -1,3 +1,4 @@
+
 /* - - - - - - - - - - Dark / light mode - - - - - - - - - - - - - - - - - - - - - */
 html {
   --navbar: #BD5D38;
@@ -60,14 +61,14 @@ body{
 /* - - - - - - - - - - -Checkbox - - - - - - - - - - - - - - - - - - - - - - */
 .toggle-container{
   position: fixed;
-  top: 75px;
-  right: 50px;
+  top: 68px;
+  right: 16px;
   background-color: transparent;
 }
 .page > div:nth-child(3) > p:nth-child(1){   /* Dark Mode*/
   position: fixed;
-  top: 105px;
-  right: 52px;
+  top: 98px;
+  right: 17px;
   border-radius: 50%;
   background-color: transparent;
 }
@@ -148,9 +149,12 @@ h2.text-uppercase > span:nth-child(1){ /* titre présentation*/
   color:  var(--navbar);
   font-size: 1em;
 }
-h5.text-uppercase:nth-child(3){ /* mail présentation*/
+#presentation > a:nth-child(3) > h5:nth-child(1) > span:nth-child(1){  /* icone telephonique  - - - - - - - - - - */
+  color: var(--navbar);
+}
+h5.text-uppercase:nth-child(4){ /* mail présentation*/
   color:  var(--navbar);
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .presentation h5, .presentation p{
   color: var(--color-text);
@@ -240,8 +244,18 @@ div.d-flex:nth-child(7) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)
 .h3gauche{
   width: 90%;
 }
-.for-info h3{
+/* - - - - - - - - - -FORMATION- - - - - - - - - - - - - - - - - - - - - - - - - - */
+#formation > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1){   /* Titres des étblissements formation */
   color: #7d5a5a;
+  font-family: 'Epilogue', sans-serif;
+}
+#formation > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1){
+  color: #7d5a5a;
+  font-family: 'Epilogue', sans-serif;
+}
+#formation > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1){
+  color: #7d5a5a;
+  font-family: 'Epilogue', sans-serif;
 }
 .for-info h3, .for-info h4{  /* etablissement */
   font-family: 'Raleway', sans-serif;
@@ -253,6 +267,10 @@ div.d-flex:nth-child(7) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)
   margin-bottom: 20px;
   border-radius: 20%;
 }
+div.for-logo{
+  width: 130px;
+}
+/* - - - - - - - - - -COMPETENCE- - - - - - - - - - - - - - - - - - - - - - - - - - */
 h2.mt-5{     /* titre compétences*/
   color:  var(--navbar);
   font-size: 2.5em;
