@@ -5,6 +5,10 @@ html {
   --page: white;
   --color-titres: #BD5D38;
   --color-text: #333333;
+  --conteneur95: #e85d04;
+  --conteneur90:  #e07b39;
+  --conteneur85: #e07b39;
+  --darkmode: rgb(173, 185, 196);
 }
 
 html[data-theme='dark'] {
@@ -12,6 +16,10 @@ html[data-theme='dark'] {
   --page: #434343;
   --color-titres: #B5B5B5;
   --color-text: #B5B5B5;
+  --conteneur95: lightgrey;
+  --conteneur90:  #dddddd;
+  --conteneur85: #ecefef;
+  --darkmode: transparent;
 }
 
 /* - - - - - - - - - - - Propriétés générales - - - - - - - - - - - - - - - - - - - - - - */
@@ -44,11 +52,52 @@ html[data-theme='dark'] {
   /* surcouche de fond pour annuler l'effet sur (*) */
 }
 
+.bg-secondary > ul:nth-child(1) > div:nth-child(1) {
+  /* idem */
+  background-color: #6C757D;
+}
+
+.bg-secondary > ul:nth-child(1) > div:nth-child(2) {
+  /* idem */
+  background-color: #6C757D;
+}
+
+.bg-secondary > ul:nth-child(1) > div:nth-child(3) {
+  /* idem */
+  background-color: #6C757D;
+}
+
+.bg-secondary > ul:nth-child(1) > div:nth-child(4) {
+  /* idem */
+  background-color: #6C757D;
+}
+
+.bg-secondary > ul:nth-child(1) > div:nth-child(5) {
+  /* idem */
+  background-color: #6C757D;
+}
+
 /* - - - - - - - - - - -Checkbox - - - - - - - - - - - - - - - - - - - - - - */
 .toggle-container {
-  position: relative;
-  top: 65px;
+  position: fixed;
+  top: 75px;
   right: 50px;
+  background-color: transparent;
+}
+
+.page > div:nth-child(3) > p:nth-child(1) {
+  /* Dark Mode*/
+  position: fixed;
+  top: 105px;
+  right: 52px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.page > div:nth-child(3) > p {
+  font-family: 'Epilogue', sans-serif;
+  color: var(--darkmode);
+  font-size: 0.6em;
 }
 
 input[type=checkbox] {
@@ -323,22 +372,22 @@ p.mt-lg-4 {
 
 .c85 {
   width: 85%;
-  background-color: #e07b39;
+  background-color: var(--conteneur85);
 }
 
 .c90 {
   width: 90%;
-  background-color: #e07b39;
+  background-color: var(--conteneur90);
 }
 
 .c95 {
   width: 95%;
-  background-color: #e85d04;
+  background-color: var(--conteneur95);
 }
 
 .c100 {
   width: 100%;
-  background-color: #BD5D38;
+  background-color: var(--navbar);
   border-radius: 5px;
 }
 
@@ -424,6 +473,9 @@ p.text-center:nth-child(2) {
     background-color: transparent;
   }
   .toggle-container {
+    display: none;
+  }
+  .page > div:nth-child(3) > p:nth-child(1) {
     display: none;
   }
   .navbar {
@@ -564,6 +616,13 @@ p.text-center:nth-child(2) {
   }
   footer a {
     color: var(--navbar);
+  }
+  p.text-center:nth-child(1) {
+    /*  background color de parties du footer coloré pour DarkMode/ (*) */
+    background-color: var(--page);
+  }
+  p.text-center:nth-child(2) {
+    background-color: var(--page);
   }
 }
 /*# sourceMappingURL=style.css.map */
