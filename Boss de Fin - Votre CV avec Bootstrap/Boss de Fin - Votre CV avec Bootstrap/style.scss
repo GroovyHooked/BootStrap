@@ -1,10 +1,11 @@
-
 /* - - - - - - - - - - Dark / light mode - - - - - - - - - - - - - - - - - - - - - */
 html {
   --navbar: #BD5D38;
+  --color-text-nav: white;
   --page: white;
   --color-titres: #BD5D38;
   --color-text: #333333;
+  --color-ss-text: #6C757D;
   --conteneur95: #e85d04;
   --conteneur90:  #e07b39;
   --conteneur85: #e07b39;
@@ -12,18 +13,17 @@ html {
 }
 html[data-theme='dark']{
   --navbar: #B5B5B5;
+  --color-text-nav:  #525656 ;
   --page: #434343;
-  --color-titres: #B5B5B5;
+  --color-titres:   #626567 ;
   --color-text: #B5B5B5;
+  --color-ss-text: #B5B5B5;
   --conteneur95: lightgrey;
   --conteneur90:  #dddddd;
   --conteneur85: #ecefef;
   --darkmode: transparent;
 }
 /* - - - - - - - - - - - Propriétés générales - - - - - - - - - - - - - - - - - - - - - - */
-body{
-  
-}
 
 *{
   font-family: 'Epilogue', sans-serif;
@@ -40,22 +40,30 @@ body{
   display: flex;
   flex-direction: row;
 }
+.text-light1{
+  background-color: var(--navbar);
+}
+p.text-light1{   /* Prénom/Nom dans la navbar*/
+  font-size: 1.5em;
+  bottom: 0rem;
+  color: var(--color-text-nav);
+}
 .text-light{
   background-color: var(--navbar); /* surcouche de fond pour annuler l'effet sur (*) */
 }
-.bg-secondary > ul:nth-child(1) > div:nth-child(1){   /* idem */
+.bg-secondary > ul:nth-child(1) > li:nth-child(1){   /* idem */
   background-color: #6C757D;
 }
-.bg-secondary > ul:nth-child(1) > div:nth-child(2){      /* idem */
+.bg-secondary > ul:nth-child(1) > li:nth-child(2){      /* idem */
   background-color: #6C757D;
 }
-.bg-secondary > ul:nth-child(1) > div:nth-child(3){       /* idem */
+.bg-secondary > ul:nth-child(1) > li:nth-child(3){       /* idem */
   background-color: #6C757D;
 }
-.bg-secondary > ul:nth-child(1) > div:nth-child(4){        /* idem */
+.bg-secondary > ul:nth-child(1) > li:nth-child(4){        /* idem */
   background-color: #6C757D;
 }
-.bg-secondary > ul:nth-child(1) > div:nth-child(5){        /* idem */
+.bg-secondary > ul:nth-child(1) > li:nth-child(5){        /* idem */
   background-color: #6C757D;
 }
 /* - - - - - - - - - - -Checkbox - - - - - - - - - - - - - - - - - - - - - - */
@@ -128,17 +136,14 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - -MENU FANTOME- - - - - - - - - - - - - - - - - - - - - */
 div.ghost{
   display: none;
 }
-.text-light{   /* Prénom/Nom dans la navbar*/
-  font-size: 1.5em;
-  bottom: 0rem;
-}
+
 /* - - - - - - - - - - - PRESENTATION - - - - - - - - - - - - - - - - - - - - - */
-.presentation{
-  max-height: 700px;
+#presentation h5:nth-child(1), #presentation h5:nth-child(2), #presentation p{
+  color: var(--color-ss-text);
 }
 #presentation > h2{  /* titre présentation*/
   font-family: 'Epilogue', sans-serif;
@@ -146,34 +151,34 @@ div.ghost{
   color: var(--color-text);
 }
 h2.text-uppercase > span:nth-child(1){ /* titre présentation*/
-  color:  var(--navbar);
+  color:  var(--color-titres);
   font-size: 1em;
 }
 #presentation > a:nth-child(3) > h5:nth-child(1) > span:nth-child(1){  /* icone telephonique  - - - - - - - - - - */
-  color: var(--navbar);
+  color: var(--color-titres);
 }
 h5.text-uppercase:nth-child(4){ /* mail présentation*/
-  color:  var(--navbar);
+  color:  var(--color-titres);
   font-size: 1.1em;
 }
 .presentation h5, .presentation p{
   color: var(--color-text);
 }
-div.container:nth-child(5) > a:nth-child(3) > img:nth-child(1){  /* logo twitter   */
+.container a:nth-child(3) img{ /* Logo twitter */
   border-radius: 50%;
 }
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .image{
   height: 20%;
   width: 20%;
-  max-width: 40px;
+  max-width: 60px;
 }
 .image1{
-  height: 20%;
-  width: 20%;
-  max-width: 43px;
+  height: 21%;
+  width: 21%;
+  max-width: 75px;
   border-radius: 50%;
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 center img{
   height: 25%;
   width: 25%;
@@ -184,11 +189,11 @@ div.exp:nth-child(2) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1), div
 }
 /* - - - - - - - - - EXPERIENCE - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #experience > h2:nth-child(1){ /* titre experience*/
-  color: var(--navbar);
+  color: var(--color-titres);
   font-size: 2.5em;
 }
 #formation > h2:nth-child(1){ 
-  color: var(--navbar);
+  color: var(--color-titres);
   font-size: 2.5em;
 }
 .exp-desc{
@@ -272,7 +277,7 @@ div.for-logo{
 }
 /* - - - - - - - - - -COMPETENCE- - - - - - - - - - - - - - - - - - - - - - - - - - */
 h2.mt-5{     /* titre compétences*/
-  color:  var(--navbar);
+  color:  var(--color-titres);
   font-size: 2.5em;
 
 }
@@ -349,10 +354,10 @@ p.mt-lg-4{   /* Diplôme */
 /* - - - - - - - - - -FOOTER- - - - - - - - - - - - - - - - - - - - - - - - - - */
 footer{
   background-color: var(--navbar);
-  color: white;
+  color: var(--color-text-nav);
 }
 footer a {
-  color: white;
+  color: var(--color-text-nav);
 }
 footer a:hover{
   color: lightsalmon;
@@ -363,7 +368,7 @@ p.text-center:nth-child(1){
 p.text-center:nth-child(2){
   background-color: var(--navbar); /* surcouche de fond pour annuler l'effet sur (*) */
 }
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - MEDIA QUERY - - - - - - - - - - - - - - - - - - - - - */
 @media screen and (min-width:990px){
   *{
     font-family: 'Epilogue', sans-serif;
@@ -415,7 +420,7 @@ p.text-center:nth-child(2){
   div.container:nth-child(1){
     padding-bottom: 50%;
   }
-  .text-light{
+  .text-light1{
     display: none;
   }
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
