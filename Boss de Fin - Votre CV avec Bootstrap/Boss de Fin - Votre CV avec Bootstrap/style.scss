@@ -4,6 +4,7 @@ html {
   --color-text-nav: white;
   --page: white;
   --color-titres: #BD5D38;
+  --color-ss-titres: #7d5a5a;
   --color-text: #333333;
   --color-ss-text: #6C757D;
   --conteneur95: #e85d04;
@@ -16,6 +17,7 @@ html[data-theme='dark']{
   --color-text-nav:  #525656 ;
   --page: #434343;
   --color-titres:   #626567 ;
+  --color-ss-titres: #626567;
   --color-text: #B5B5B5;
   --color-ss-text: #B5B5B5;
   --conteneur95: lightgrey;
@@ -173,9 +175,9 @@ h5.text-uppercase:nth-child(4){ /* mail présentation*/
   max-width: 60px;
 }
 .image1{
-  height: 21%;
-  width: 21%;
-  max-width: 75px;
+  height: 18%;
+  width: 18%;
+  max-width: 63px;
   border-radius: 50%;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -228,7 +230,7 @@ h2.text-center{
   color: var(--color-text);
 }
 .exp-info h3{ /* sous-titres experience*/
-  color: #7d5a5a;
+  color: var(--color-ss-titres);
 }
 .nom{
   font-family: 'Epilogue', sans-serif;  
@@ -251,15 +253,15 @@ div.d-flex:nth-child(7) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)
 }
 /* - - - - - - - - - -FORMATION- - - - - - - - - - - - - - - - - - - - - - - - - - */
 #formation > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1){   /* Titres des étblissements formation */
-  color: #7d5a5a;
+  color: var(--color-ss-titres);
   font-family: 'Epilogue', sans-serif;
 }
 #formation > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1){
-  color: #7d5a5a;
+  color: var(--color-ss-titres);
   font-family: 'Epilogue', sans-serif;
 }
 #formation > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1){
-  color: #7d5a5a;
+  color: var(--color-ss-titres);
   font-family: 'Epilogue', sans-serif;
 }
 .for-info h3, .for-info h4{  /* etablissement */
