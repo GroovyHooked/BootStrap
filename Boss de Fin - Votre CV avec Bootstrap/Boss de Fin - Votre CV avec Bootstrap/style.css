@@ -13,6 +13,9 @@ html {
   --conteneur85: #e07b39;
   --darkmode: rgb(173, 185, 196);
   --toggler: #824027;
+  --passion: #3d2113;
+  --determination: #690e02;
+  --adaptation: #824027;
 }
 
 html[data-theme='dark'] {
@@ -27,7 +30,10 @@ html[data-theme='dark'] {
   --conteneur90:  #dddddd;
   --conteneur85: #ecefef;
   --darkmode: transparent;
-  --toggler: #626567;
+  --toggler: #434343;
+  --passion: #B5B5B5;
+  --determination: #B5B5B5;
+  --adaptation: #B5B5B5;
 }
 
 /* - - - - - - - - - - - Propriétés générales - - - - - - - - - - - - - - - - - - - - - - */
@@ -211,8 +217,31 @@ h5.text-uppercase:nth-child(4) {
   font-size: 1.1em;
 }
 
-p.mt-5, p.text-md-center:nth-child(6) {
-  /* Texte descriptif */
+h5.text-uppercase:nth-child(1) {
+  /* PASSION */
+  color: var(--determination);
+  font-size: 1.5em;
+}
+
+h5.text-uppercase:nth-child(2) {
+  /* DETERMINATION */
+  color: var(--passion);
+  font-size: 1.5em;
+}
+
+h5.text-uppercase:nth-child(3) {
+  /* ADAPTATION */
+  color: var(--adaptation);
+  font-size: 1.5em;
+}
+
+.savoirplus > p:nth-child(1) {
+  /* En savoir plus */
+  background-color: var(--page);
+  color: var(--color-text);
+}
+
+.card {
   color: var(--color-ss-text);
 }
 
@@ -494,7 +523,7 @@ footer a:hover {
   color: lightsalmon;
 }
 
-p.text-center:nth-child(1) {
+.mt-4 {
   background-color: var(--navbar);
   /* surcouche de fond pour annuler l'effet sur (*) */
 }
@@ -570,6 +599,9 @@ p.text-center:nth-child(2) {
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   div.presentation {
     border-bottom: 1px solid lightgrey;
+  }
+  div.container:nth-child(5) {
+    padding-left: 0;
   }
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   .EXPERIENCE {
